@@ -17,13 +17,13 @@ class SignUpViewModel : ViewModel() {
     fun validateFields(
         name: String,
         email: String,
-        faculty: String,
+        numCel: String,
         passwd: String,
         repasswd: String
     ) {
         if(name.isEmpty() ||
             email.isEmpty() ||
-            faculty.isEmpty() ||
+            numCel.isEmpty() ||
             passwd.isEmpty() ||
             repasswd.isEmpty()){
             _errorMsg.value = "Debe digitar todolos acampos"
@@ -34,7 +34,7 @@ class SignUpViewModel : ViewModel() {
             }
             else{
                 GlobalScope.launch(Dispatchers.IO) {
-                    userRepository.registerUser(name, email, faculty, passwd)
+                    userRepository.registerUser(name, email, numCel, passwd)
                 }
 
             }

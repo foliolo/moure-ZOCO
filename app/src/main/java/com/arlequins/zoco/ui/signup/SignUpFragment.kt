@@ -33,7 +33,7 @@ class SignUpFragment : Fragment() {
                 signUpViewModel.validateFields(
                     signUpNameEditText.text.toString(),
                     signUpEmailEditText.text.toString(),
-                    signUpFacultyEditText.text.toString(),
+                    signUpNumCelEditText.text.toString(),
                     signUpPasswordEditText.text.toString(),
                     signUpRePasswordEditText.text.toString()
                 )

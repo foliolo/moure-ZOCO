@@ -22,7 +22,7 @@
     <string name="hint_password">Contraseña</string>
     <string name="hint_re_password">Repetir contraseña</string>
     <string name="hint_user_name">Nombre de usuario</string>
-    <string name="hint_faculty">Facultad</string>
+    <string name="hint_telephone">Teléfono</string>
     <string name="botton_log_in">Iniciar sesión</string>
     <string name="botton_sign_up">Registrarse</string>
     <string name="lost_password"><u>Olvidé mi contraseña</u></string>
