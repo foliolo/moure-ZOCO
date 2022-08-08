@@ -1,0 +1,56 @@
+<resources >
+    <!-- Base application theme. -->
+    <style name="Theme.ZOCO" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryVariant">@color/primary_dark</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/accent</item>
+        <item name="colorSecondaryVariant">@color/accent_variant</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" >?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="Theme.ZOCO.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.ZOCO.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.ZOCO.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="textViewStyle">
+        <item name="android:textColor">@color/primary_dark</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAlignment">center</item>
+
+    </style>
+
+    <style name="textViewStyle.H1">
+        <item name="android:textSize">45sp</item>
+        <item name="android:fontFamily">@font/berkshire_swash</item>
+    </style>
+
+    <style name="textViewStyle.H2">
+        <item name="android:textSize">20sp</item>
+        <!--<item name="android:fontFamily">@font/</item>-->
+        <item name="android:textColor">@color/primary_text</item>
+    </style>
+
+    <style name="textViewStyle.H3">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/primary_text</item>
+    </style>
+
+    <style name="textViewStyle.H4">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">italic</item>
+        <item name="android:textColor">@color/primary_dark</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+
+</resources>

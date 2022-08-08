@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/nav_log_in">
+
+    <fragment
+        android:id="@+id/nav_all_products"
+        android:name="com.arlequins.zoco.ui.allproducts.AllProductsFragment"
+        android:label="@string/menu_all_products"
+        tools:layout="@layout/fragment_all_products" />
+
+    <fragment
+        android:id="@+id/nav_category"
+        android:name="com.arlequins.zoco.ui.category.CategoryFragment"
+        android:label="@string/menu_category"
+        tools:layout="@layout/fragment_category" />
+
+    <fragment
+        android:id="@+id/nav_my_products"
+        android:name="com.arlequins.zoco.ui.myproducts.MyproductsFragment"
+        android:label="@string/menu_my_products"
+        tools:layout="@layout/fragment_my_products" />
+    <fragment
+        android:id="@+id/nav_notifications"
+        android:name="com.arlequins.zoco.ui.notifications.NotificationsFragment"
+        android:label="@string/menu_notifications"
+        tools:layout="@layout/fragment_notifications" />
+    <fragment
+        android:id="@+id/nav_configurations"
+        android:name="com.arlequins.zoco.ui.configurations.ConfigurationsFragment"
+        android:label="@string/menu_configurations"
+        tools:layout="@layout/fragment_configurations" />
+    <fragment
+        android:id="@+id/nav_log_in"
+        android:name="com.arlequins.zoco.ui.login.LogInFragment"
+        android:label="@string/login"
+        tools:layout="@layout/fragment_log_in">
+        <action
+            android:id="@+id/action_nav_log_in_to_nav_sign_up"
+            app:destination="@id/nav_sign_up" />
+        <action
+            android:id="@+id/action_nav_log_in_to_nav_all_products"
+            app:destination="@id/nav_all_products" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_sign_up"
+        android:name="com.arlequins.zoco.ui.signup.SignUpFragment"
+        android:label="@string/signup"
+        tools:layout="@layout/fragment_sign_up">
+        <action
+            android:id="@+id/action_nav_sign_up_to_nav_log_in"
+            app:destination="@id/nav_log_in" />
+    </fragment>
+</navigation>
